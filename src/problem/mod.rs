@@ -1,3 +1,4 @@
+mod is_subsequence_392;
 mod majority_element_169;
 mod merge_sorted_array_88;
 mod remove_duplicates_from_sorted_array_26;
