@@ -1,14 +1,14 @@
 package main
 
 func strStr(haystack string, needle string) int {
-	if len(needle) == 0 {
-		return 0
-	}
+	i, end := 0, len(haystack)
 
-	for i := 0; i <= len(haystack)-len(needle); i++ {
+	for i+len(needle) <= end {
 		if haystack[i:i+len(needle)] == needle {
 			return i
 		}
+		i++
+
 	}
 
 	return -1
